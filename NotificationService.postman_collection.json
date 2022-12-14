@@ -1,0 +1,346 @@
+{
+	"info": {
+		"_postman_id": "f6eac826-4964-479e-a0ff-6526ba3b1879",
+		"name": "NotificationService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4373940"
+	},
+	"item": [
+		{
+			"name": "Data Notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \t\"title\":\"Notification for pending work\",\r\n    \"message\":\"pls complete your pending task immediately\",\r\n  \t\"token\":\"123456\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/notification/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notification",
+						"data"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Data Notification",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \t\"title\":\"Notification for pending work\",\r\n    \"message\":\"pls complete your pending task immediately\",\r\n  \t\"token\":\"sfsfsdfsdfdsfsdfsdfsdfsdfsdf\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/notification/data",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"notification",
+								"data"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Dec 2022 03:43:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Notification has been sent.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Topic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n \t\"title\":\"Notification for pending work\",\r\n \t\"message\":\"pls complete your pending task immediately\",\r\n \t\"topic\" : \"global\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/notification/topic",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notification",
+						"topic"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Topic",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n \t\"title\":\"Notification for pending work\",\r\n \t\"message\":\"pls complete your pending task immediately\",\r\n \t\"topic\" : \"global\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/notification/topic",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"notification",
+								"topic"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Dec 2022 03:51:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Notification has been sent.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\":\"Notification for pending work\",\r\n  \"message\":\"pls complete your pending task immediately\",\r\n  \"token\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/notification/token",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notification",
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\":\"Notification for pending work\",\r\n  \"message\":\"pls complete your pending task immediately\",\r\n  \"token\":\"sfssdfsdfsdfsfsfsfsfsfsfsfsdfsfsfs\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/notification/token",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"notification",
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Dec 2022 03:52:42 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Notification has been sent.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Custom Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\" : \"global\"\r\n}   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/notification/data/customdatawithtopic",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notification",
+						"data",
+						"customdatawithtopic"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"topic\" : \"global\"\r\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/notification/data/customdatawithtopic",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"notification",
+								"data",
+								"customdatawithtopic"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Dec 2022 03:53:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Notification has been sent.\"\n}"
+				}
+			]
+		}
+	]
+}
